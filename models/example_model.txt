@@ -1,0 +1,18 @@
+from models.base_model import BaseModel
+from base import Base
+from sqlalchemy import Column
+from sqlalchemy import Integer
+from sqlalchemy import String
+
+
+# ---------------------------------------------------------------------------- #
+#                           ORM Object the table Test                          #
+# ---------------------------------------------------------------------------- #
+
+class ExampleModel(Base, BaseModel):
+    __tablename__ = "notifications"
+    id = Column(Integer, primary_key=True)
+    ticket = Column(String)
+    email = Column(String)
+    result = Column(Integer)
+    date_created = Column(String)

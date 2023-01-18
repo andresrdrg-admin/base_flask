@@ -1,0 +1,11 @@
+from controllers.base_controller import BaseController
+from models.comands_model import ComandsModel
+
+
+
+class ExampleController(BaseController):
+    def __init__(self) -> None:
+        BaseController.__init__(self)
+        self.model_concept = ComandsModel
+        self.model = ComandsModel()
+        self.values_allow = self.model.as_array()

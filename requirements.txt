@@ -1,0 +1,8 @@
+flask
+python-dotenv
+sqlalchemy
+mysqlclient
+pycurl
+pandas
+requests
+pysftp

@@ -1,0 +1,1 @@
+docker run -dit --restart unless-stopped --network host --volume "/dir-local-application/:/app" --volume "/optional-data-extra-dir/:/data/" --name ---NAME-APPLICATION---_container ---NAME-APPLICATION---:latest
